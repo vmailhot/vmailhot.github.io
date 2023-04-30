@@ -1,83 +1,62 @@
+<!--https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_portfolio&stacked=h-->
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="en">
+  <head>
+    <title>Site de V.M</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Science</title>
-        <style>
-            .block {
-            display: block;
-            width: 100%;
-            border: none;
-            background-color: #2869ec;
-            padding: 14px 28px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            }
-            .block2 {
-            display: block;
-            width: 100%;
-            border: none;
-            background-color: #db4646;
-            padding: 14px 28px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            }
-            .block3 {
-            display: block;
-            width: 100%;
-            border: none;
-            background-color: #f6f600a9;
-            padding: 14px 28px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            }
-            h1 {
-                color: black;
-            }
-            #img_guide {
-                position: absolute;
-                top: 35px;
-                left: 45px;
-                width: 55px;
-            }
-            #img_notes {
-                position: absolute;
-                top: 175px;
-                left: 45px;
-                width: 55px;
-            }
-            #img_surnom {
-                position: absolute;
-                top: 295px;
-                left: 45px;
-                width: 55px;
-            }
-            button {
-                border-radius: 30px;
-                margin: 15px;
-            }
-            body {
-                margin: 15px;
-            }
-        </style>
-    </head>
-    <body>
-        <button type="button" class="block">
-            <a href="guide_etude.html" class="btn btn-primary"><h1>Guides d'études</h1></a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="images/doc_icon.jpg" rel="icon">
+
+
+    <style>
+      /* Remove the navbar's default margin-bottom and rounded borders */
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+
+      /* Add a gray background color and some padding to the footer */
+      footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button type="button" class="block2">
-            <a href="notes.html" class="btn btn-primary"><h1>Notes</h1></a>
-        </button>
-        <button type="button" class="block3">
-            <a href="surnoms.html" class="btn btn-primary"><h1>Surnoms</h1></a>
-        </button>
-        <img id="img_guide" src="/images/doc_icon.jpg" alt="image doc">
-        <img id="img_notes" src="/images/notes.jpg" alt="image notes">
-        <img id="img_surnom" src="/images/surnoms.jpg" alt="image surnoms">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="surnoms.html">Surnoms</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+    <main class="container-fluid py-5 text-center">
+      {% block main %}{% endblock %}
+    </main>
+
+      <footer class="container-fluid text-center">
+        <p>© Vincent Mailhot 2023</p>
+      </footer>
+
     </body>
+
 </html>
