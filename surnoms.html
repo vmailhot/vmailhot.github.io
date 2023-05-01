@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Surnoms</title>
+    <title>Notes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link href="images/surnoms.jpg" rel="icon">
+    <link rel="icon" href="/images/notes.jpg" type="image/icon type">
 
 
     <style>
@@ -25,15 +25,19 @@
             background-color: #f2f2f2;
             padding: 25px;
         }
-        table {
-            text-align: center;
+        .table {
+              text-align: center;
         }
         h1 {
             text-align: center;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto\10;
+        }
         body, footer {
             margin: 10px;
-            color: black;
         }
         button {
             width: 100%;
@@ -43,49 +47,96 @@
             border-radius: 15px;
             background-color: rgba(250, 242, 5, 0.792);
         }
-        a {
-            color: black;
-        }
         th {
             text-align: center;
         }
     </style>
   </head>
   <body>
-
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="guide_etude.html">Guides d'étude</a></li>
+              <li><a href="notes.html">Notes</a></li>
+              <li><a href="surnoms.html">Surnoms</a></li>
+            </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="guide_etude.html">Guides d'étude</a></li>
-            <li><a href="notes.html">Notes</a></li>
-            <li><a href="surnoms.html">Surnoms</a></li>
-          </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
     <main class="container-fluid py-5 text-center">
-        <h1>Page retiré</h1>
+      <h1>Surnoms des homies</h1>
+      <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Surnoms de Nadeau</th>
+            <th scope="col">Surnoms de Vincent</th>
+            <th scope="col">Surnoms de Antoine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Napute</td>
+            <td>Vincensus</td>
+            <td>Anthony</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Merguez</td>
+            <td>NPC</td>
+            <td>Antonin</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Nadeau l'ado</td>
+            <td>Mailhonaise</td>
+            <td>P'tit gars</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>LaGrosseàAmhad</td>
+            <td>Vinsous</td>
+            <td>Harry Potter</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Le bg au beaux yeux</td>
+            <td>Vingt mille</td>
+            <td>E-boy</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>L'homophobe</td>
+            <td>Goofy ahh NPC</td>
+            <td>Sauvetage</td>
+          </tr>
+          <tr>
+            <th scope="row"> </th>
+            <td><a href="/images/image_nadeau.jpg">Nadeau</a></td>
+            <td><a href="/images/image_vincent.jpg">Vincent</a></td>
+            <td><a href="/images/image_antoine.jpg">Antoine</a></td>
+            </tr>
+        </tbody>
     </main>
-
-      <footer class="container-fluid text-center">
-        <p><h4>© Vincent Mailhot 2023</h4></p>
-        <h4>Reporter un bug: bug.vincent.mailhot@gmail.com</h4>
-        <button>
-            <a href="index.html" class="btn btn-primary"><h1>Retour</h1></a>
-        </button>
-      </footer>
-
-    </body>
+  </body>
+  <footer class="container-fluid text-center">
+    <p><h4>© Vincent Mailhot 2023</h4></p>
+    <h4>Reporter un bug: bug.vincent.mailhot@gmail.com</h4>
+    <button>
+        <a href="index.html" class="btn btn-primary"><h1>Retour</h1></a>
+    </button>
+  </footer>
 
 </html>
