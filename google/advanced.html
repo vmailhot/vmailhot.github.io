@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="google.css">
+    </head>
+    <body>
+        <div id="title">Google Advanced Search</div>
+        <form action="https://www.google.com/search">
+            <label id="all-text">all these words:</label>
+            <input id="all" type="text" name="as_q" autocomplete="off">
+            <label id="exact-text">this exact words or phrase:</label>
+            <input id="exact" type="text" name="as_epq" autocomplete="off">
+            <label id="any-text">any of these words:</label>
+            <input id="any" type="text" name="as_oq" autocomplete="off">
+            <label id="none-text">none of these words:</label>
+            <input id="none" type="text" name="as_eq" autocomplete="off">
+            <div id="search_button">
+                <input class="button" type="submit" value="Google Search">
+            </div>
+        </form>
+
+        <div id="link">
+            <form action="index.html">
+                <button class="button">Google Search</button>
+            </form>
+        </div>
+
+    </body>

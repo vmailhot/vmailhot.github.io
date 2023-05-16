@@ -1,0 +1,73 @@
+#none, #any, #exact, #all {
+  position: absolute;
+  left: 275px;
+  width: 580px;
+  height: 20px;
+  border: 1px solid blue;
+  padding: 12px 20px;
+}
+
+#none-text, #any-text, #exact-text, #all-text {
+  position: absolute;
+  padding: 12px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+#link {
+  text-align: right;
+  font-size: 20px;
+}
+
+#all {
+  top: 300px;
+}
+
+#all-text {
+  top: 300px;
+}
+
+#exact {
+  top: 375px;
+}
+
+#exact-text {
+  top: 375px;
+}
+
+#any {
+  top: 450px;
+}
+
+#any-text {
+  top: 450px;
+}
+
+#none {
+  top: 525px;
+}
+
+#none-text {
+  top: 525px;
+}
+
+#search_button {
+  position: absolute;
+  padding: 8px;
+  border-radius: 20px;
+  top: 600px;
+  left: 500px;
+}
+
+.button {
+  font-size: 20px;
+}
+
+#title {
+  font-size: 60px;
+  position: absolute;
+  top: 180px;
+  left: 280px;
+}
+
+/*# sourceMappingURL=google.css.map */
