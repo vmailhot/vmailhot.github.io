@@ -30,6 +30,27 @@
         height: auto;
         width: auto\9;
       }
+      /* Style for the alert message */
+      .alert {
+        padding: 5px;
+        background-color: #3c96e0;
+        color: white;
+      }
+
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .closebtn:hover {
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -58,6 +79,10 @@
     </nav>
   
     <main class="container-fluid py-5 text-center">
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is an alert box
+      </div>
       <h1>Bienvenue sur mon site!</h1>
       <img src="/images/npc.jpg" alt="Image d'un NPC">
       <h3>Sur appareil mobile: utiliser les 3 barres horizontales pour accéder aux autres onglets</h3>
